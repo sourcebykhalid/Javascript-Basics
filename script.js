@@ -682,14 +682,39 @@ const user2 = {
 // const { player: Cricketer } = sportsData;
 // console.log(Cricketer);
 
-let person = {
-  firstName: "John",
-  lastName: "Doe",
-  currentAge: 28,
-};
+// let person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   currentAge: 28,
+// };
 
-let { firstName, lastName, middleName = "", currentAge: age = 18 } = person;
+// let { firstName, lastName, middleName = "", currentAge: age = 18 } = person;
 
-console.log(middleName); // ''
-console.log(age); // 28
-console.log(currentAge);
+// console.log(middleName); // ''
+// console.log(age); // 28
+// console.log(currentAge);
+
+//Functions in Javascript
+// let greet = (x) => {
+//   setTimeout(() => {
+//     console.log(`i will be logged in ${x}  seconds`);
+//   }, 3000);
+// };
+// greet(3);
+
+// function greet(firstName, lastName) {
+//   console.log("Hello " + firstName + " " + lastName);
+// }
+
+// greet("Bill", "Gates");
+// greet(100, 200);
+
+function employee(employ) {
+  if (!employ) {
+    console.log("Please enter ur userid");
+    return;
+  }
+  return `${employ} just logged in the system`;
+}
+let loggedemploy = employee("Mustafa");
+console.log(loggedemploy);
