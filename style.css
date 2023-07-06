@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+body {
+  background-color: rgb(178 236 236 / 47%);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  height: 5rem;
+}
+.navbar ul {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 0 24px;
+  cursor: pointer;
+}
+.navbar ul li a {
+  color: white;
+}
+.navbar ul li a:hover {
+  color: rgb(56, 56, 198);
+  font-size: 1.05rem;
+}
+.left {
+  font-size: 1.4rem;
+}
+.left span {
+  color: rgb(56, 56, 198);
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(38, 37, 37);
+  margin: 130px 0;
+}
+.firstSection > div {
+  width: 30%;
+}
+#element {
+  color: rgb(56, 56, 198);
+}
+.leftSection {
+  font-size: 3rem;
+  margin: 60px 0;
+}
+.leftSection .btn1 {
+  background: white;
+  color: black;
+  border: none;
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.leftSection.btn1 img {
+  width: 20px;
+  padding-top: 0px;
+}
+.leftSection .btn2 img {
+  width: 20px;
+  padding-top: 0px;
+}
+.leftSection .btn1:hover {
+  color: white;
+  background: #000;
+  cursor: pointer;
+  width: 180px;
+  transition: 1.4s;
+}
+.leftSection .btn2 {
+  background: white;
+  color: black;
+  border: none;
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.leftSection .btn2 a {
+  color: #000;
+}
+.leftSection .btn2:hover {
+  color: white;
+  background: #000;
+  cursor: pointer;
+  width: 140px;
+  transition: 1.4s;
+  cursor: pointer;
+}
+.blue {
+  color: rgb(56, 56, 198);
+}
+.rightSection img {
+  width: 80%;
+  margin: 50px 0;
+}
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+  transition: 1.7s;
+}
+main hr {
+  border: 0;
+  background: rgb(0, 0, 0);
+  height: 1.4px;
+  margin: 60px 94px;
+}
+.secondSection h1 {
+  font-size: 1.9rem;
+  color: black;
+}
+.text-grey {
+  color: rgb(42, 41, 41);
+}
+.secondSection .box {
+  background: rgb(48, 47, 47);
+  width: 64vw;
+  height: 2px;
+  margin: 60px;
+  display: flex;
+}
+.vertical {
+  height: 93px;
+  width: 2px;
+  background: #000;
+  margin: 0 100px;
+  transition: 1.7s ease-out;
+}
+.vertical .image-top {
+  width: 43px;
+  position: relative;
+  top: -41px;
+  left: -21px;
+}
+.vertical-title {
+  position: relative;
+  top: 60px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.vertical-desc {
+  position: relative;
+  top: 59px;
+  color: rgb(42, 41, 41);
+  width: 150px;
+  font-size: 13px;
+}
+.vertical .image-top2 {
+  width: 60px;
+  position: relative;
+  top: -35px;
+  left: -29px;
+}
+.vertical .image-top3 {
+  width: 28px;
+  position: relative;
+  top: -41px;
+  left: -13px;
+}
+.vertical-title3 {
+  position: relative;
+  top: 57px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.vertical-title4 {
+  position: relative;
+  top: 55px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.vertical-desc3 {
+  position: relative;
+  top: 55px;
+  color: rgb(42, 41, 41);
+  width: 150px;
+  font-size: 13px;
+}
+.vertical-desc4 {
+  position: relative;
+  top: 53px;
+  color: rgb(42, 41, 41);
+  width: 150px;
+  font-size: 13px;
+}
+footer {
+  /* height: 10rem; */
+  background: #000;
+}
+.flex {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+/* .flex > div {
+  width: 122px;
+} */
+.flex ul li {
+  color: aliceblue;
+}
+@media screen and (max-width: 960px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navbar ul li {
+    margin: 0 12px;
+    cursor: pointer;
+  }
+
+  .firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(38, 37, 37);
+    margin: 70px 0;
+  }
+  .left {
+    font-size: 1.2rem;
+  }
+  .firstSection > div {
+    width: 46%;
+  }
+  .leftSection {
+    font-size: 2.3rem;
+    margin: 40px 0;
+  }
+  .leftSection .btn1:hover {
+    color: white;
+    background: #000;
+    cursor: pointer;
+    width: 160px;
+    transition: 1.4s;
+  }
+  .leftSection .btn2:hover {
+    color: white;
+    background: #000;
+    cursor: pointer;
+    width: 110px;
+    transition: 1.4s;
+  }
+  main hr {
+    border: 0;
+    background: rgb(0, 0, 0);
+    height: 1.4px;
+    margin: 60px 20px;
+  }
+  .secondSection h1 {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 49px;
+    margin-left: 80px;
+  }
+  .text-grey {
+    color: rgb(42, 41, 41);
+    margin-left: 80px;
+  }
+  .secondSection .box {
+    background: rgb(48, 47, 47);
+    width: 79vw;
+    height: 2px;
+    margin: 23px 10px;
+  }
+  .vertical {
+    height: 73px;
+    width: 2px;
+    background: #000;
+    margin: 0px 62px;
+  }
+  .vertical .image-top {
+    width: 29px;
+    position: relative;
+    top: -29px;
+    left: -15px;
+  }
+  .vertical-title {
+    position: relative;
+    top: 60px;
+    width: 80px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .vertical-desc {
+    position: relative;
+    top: 59px;
+    color: rgb(42, 41, 41);
+    width: 70px;
+    font-size: 13px;
+  }
+  .vertical .image-top2 {
+    width: 47px;
+    position: relative;
+    top: -28px;
+    left: -23px;
+  }
+  .vertical .image-top3 {
+    width: 19px;
+    position: relative;
+    top: -29px;
+    left: -9px;
+  }
+  .vertical-title3 {
+    position: relative;
+    top: 57px;
+    width: 80px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .vertical-title4 {
+    position: relative;
+    top: 55px;
+    width: 80px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .vertical-desc3 {
+    position: relative;
+    top: 55px;
+    color: rgb(42, 41, 41);
+    width: 70px;
+    font-size: 13px;
+  }
+  .vertical-desc4 {
+    position: relative;
+    top: 53px;
+    color: rgb(42, 41, 41);
+    width: 70px;
+    font-size: 13px;
+  }
+  footer {
+    /* height: 10rem; */
+    background: #000;
+  }
+  .flex .footer-first {
+    margin: 0 43px;
+  }
+  .flex {
+    display: flex;
+  }
+}

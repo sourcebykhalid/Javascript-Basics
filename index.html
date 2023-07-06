@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Khalid - Developer Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <h1>devFolio<span>.</span> </h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">
+                            Home</li>
+                    </a>
+                    <li><a href="">
+                            About</li>
+                    </a>
+                    <li><a href="">
+                            Services</li>
+                    </a>
+                    <li><a href="">
+                            Projects</li>
+                    </a>
+                    <li> <a href="">
+                            Contact me!</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+
+            <div class="leftSection">Hi, My name is <span class="blue">Khalid</span> and I'm a
+                <span id="element"></span>
+                <br>
+                <button class="btn1" id="btn1" onclick="btn()">Download Resume! <img
+                        src="images/resume-24.png"></button>
+                <button class="btn2"><a href="https://github.com/webbykhaled" target="_blank"></a>Visit
+                    Github!<img src="images/github-30.png"></button>
+            </div>
+
+            <div class="rightSection">
+                <img src="images/bg1.png">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience ▼</h1>
+            <div class="box">
+
+                <div class="vertical">
+                    <img src="images/html.png" class="image-top">
+                    <div class="vertical-title" id="title">HTML Developer (2019-2020)</div>
+                    <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                        voluptates earum fugit officiis at enim necessitatibus ad provident, dicta </div>
+                </div>
+                <div class="vertical">
+                    <img src="images/frontend.png" class="image-top2">
+                    <div class="vertical-title">Frontend Developer (2020-2021)</div>
+                    <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                        voluptates earum fugit officiis at enim necessitatibus ad provident, dicta </div>
+                </div>
+                <div class="vertical">
+                    <img src="images/js.png" class="image-top3">
+                    <div class="vertical-title3">Javascript Developer(2021-2022)</div>
+                    <div class="vertical-desc3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                        voluptates earum fugit officiis at enim necessitatibus ad provident, dicta </div>
+                </div>
+                <div class="vertical">
+                    <img src="images/react.png" class="image-top">
+                    <div class="vertical-title4">React JS Developer (2022-present)</div>
+                    <div class="vertical-desc4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                        voluptates earum fugit officiis at enim necessitatibus ad provident, dicta </div>
+                </div>
+
+            </div>
+        </section>
+
+        <button id="btn1">Button1</button>
+        <button id="btn2">Button2</button>
+
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                Portfolio by Khalid
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Services</li>
+                    </a>
+                    <a href="">
+                        <li>Projects</li>
+                    </a>
+                    <a href="">
+                        <li>Contact me!</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Software Developer",
+                "Graphic Designer",
+                "Entrepenuer",
+                "Coder...",
+            ],
+            typeSpeed: 100,
+        });
+    </script>
+
+    <script>
+        let add1 = (function () {
+            let count = 0;
+            return function () {
+                count++;
+                this.innerText = count;
+            }
+        })();
+        let add2 = (function () {
+            let count = 0;
+            return function () {
+                count++;
+                this.innerText = count;
+            }
+        })();
+
+        btn1.onclick = add1;
+        btn2.onclick = add2;
+    </script>
+</body>
+
+</html>
