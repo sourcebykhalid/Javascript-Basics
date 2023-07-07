@@ -646,19 +646,19 @@
 // Object with Singleton or constructor
 //const user = new Object(); // Singleton
 
-const user1 = {
-  userName: "Jammy",
-  password: "Qtrrwxf343#",
-  isLoggedIn: true,
-};
-// console.log("user", typeof user1 === "object");
+// const user1 = {
+//   userName: "Jammy",
+//   password: "Qtrrwxf343#",
+//   isLoggedIn: true,
+// };
+// // console.log("user", typeof user1 === "object");
 
-// console.log(user1);
-const user2 = {
-  userName2: "Sammy",
-  password2: "Ltrwxf343#",
-  isLoggedOut: false,
-};
+// // console.log(user1);
+// const user2 = {
+//   userName2: "Sammy",
+//   password2: "Ltrwxf343#",
+//   isLoggedOut: false,
+// };
 // console.log("user", typeof user1 === "object");
 
 // console.log(user2);
@@ -709,12 +709,38 @@ const user2 = {
 // greet("Bill", "Gates");
 // greet(100, 200);
 
-function employee(employ) {
-  if (!employ) {
-    console.log("Please enter ur userid");
-    return;
-  }
-  return `${employ} just logged in the system`;
+// function employee(employ) {
+//   if (!employ) {
+//     console.log("Please enter ur userid");
+//     return;
+//   }
+//   return `${employ} just logged in the system`;
+// }
+// let loggedemploy = employee("Mustafa");
+// console.log(loggedemploy);
+
+// Functions with objects and arrays in Javascript
+// Rest Operator in Javascript
+// function sum(...args) {
+//   return ` The returned values are: ${args}`;
+// }
+// console.log(sum(677, 987, 345));
+
+// passing objects as an arguments in functions
+// function ecomm(anyobject) {
+//   console.log(
+//     `Username is ${anyobject.username} and Password is ${anyobject.password}`
+//   );
+// }
+// ecomm({
+//   username: "johndoe",
+//   password: "PASSWORD",
+// });
+
+// Passing arrays as an arguments in Functions
+function zerodha(anyarray) {
+  console.log(
+    `The Client Id is ${anyarray[0]} and the profit of Client is ${anyarray[1]}`
+  );
 }
-let loggedemploy = employee("Mustafa");
-console.log(loggedemploy);
+zerodha(["875434ZERODHA", "Rs 87568.00"]);
