@@ -700,42 +700,42 @@
 //     console.log(`i will be logged in ${x}  seconds`);
 //   }, 3000);
 // };
-// greet(3);
+greet(3);
 
-// function greet(firstName, lastName) {
-//   console.log("Hello " + firstName + " " + lastName);
-// }
+function greet(firstName, lastName) {
+  console.log("Hello " + firstName + " " + lastName);
+}
 
-// greet("Bill", "Gates");
-// greet(100, 200);
+greet("Bill", "Gates");
+greet(100, 200);
 
-// function employee(employ) {
-//   if (!employ) {
-//     console.log("Please enter ur userid");
-//     return;
-//   }
-//   return `${employ} just logged in the system`;
-// }
-// let loggedemploy = employee("Mustafa");
-// console.log(loggedemploy);
+function employee(employ) {
+  if (!employ) {
+    console.log("Please enter ur userid");
+    return;
+  }
+  return `${employ} just logged in the system`;
+}
+let loggedemploy = employee("Mustafa");
+console.log(loggedemploy);
 
 // Functions with objects and arrays in Javascript
 // Rest Operator in Javascript
-// function sum(...args) {
-//   return ` The returned values are: ${args}`;
-// }
-// console.log(sum(677, 987, 345));
+function sum(...args) {
+  return ` The returned values are: ${args}`;
+}
+console.log(sum(677, 987, 345));
 
 // passing objects as an arguments in functions
-// function ecomm(anyobject) {
-//   console.log(
-//     `Username is ${anyobject.username} and Password is ${anyobject.password}`
-//   );
-// }
-// ecomm({
-//   username: "johndoe",
-//   password: "PASSWORD",
-// });
+function ecomm(anyobject) {
+  console.log(
+    `Username is ${anyobject.username} and Password is ${anyobject.password}`
+  );
+}
+ecomm({
+  username: "johndoe",
+  password: "PASSWORD",
+});
 
 // Passing arrays as an arguments in Functions
 function zerodha(anyarray) {
@@ -744,3 +744,5 @@ function zerodha(anyarray) {
   );
 }
 zerodha(["875434ZERODHA", "Rs 87568.00"]);
+
+// Scopes in Javascript
