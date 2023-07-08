@@ -825,3 +825,11 @@
 // Implicit return in Arrow Functions
 // const addnums = (num1, num2) => num1 + num2;
 // console.log(addnums(67, 8876));
+
+// Immediately Invoked Function Expressions (IIFE)
+(function chai(id) {
+  console.log(`DB Connected with id: ${id}`);
+})(789432);
+(() => {
+  console.log(`DB Disconnected`);
+})();
