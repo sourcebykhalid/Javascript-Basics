@@ -700,49 +700,113 @@
 //     console.log(`i will be logged in ${x}  seconds`);
 //   }, 3000);
 // };
-greet(3);
+// greet(3);
 
-function greet(firstName, lastName) {
-  console.log("Hello " + firstName + " " + lastName);
-}
+// function greet(firstName, lastName) {
+//   console.log("Hello " + firstName + " " + lastName);
+// }
 
-greet("Bill", "Gates");
-greet(100, 200);
+// greet("Bill", "Gates");
+// greet(100, 200);
 
-function employee(employ) {
-  if (!employ) {
-    console.log("Please enter ur userid");
-    return;
-  }
-  return `${employ} just logged in the system`;
-}
-let loggedemploy = employee("Mustafa");
-console.log(loggedemploy);
+// function employee(employ) {
+//   if (!employ) {
+//     console.log("Please enter ur userid");
+//     return;
+//   }
+//   return `${employ} just logged in the system`;
+// }
+// let loggedemploy = employee("Mustafa");
+// console.log(loggedemploy);
 
 // Functions with objects and arrays in Javascript
 // Rest Operator in Javascript
-function sum(...args) {
-  return ` The returned values are: ${args}`;
-}
-console.log(sum(677, 987, 345));
+// function sum(...args) {
+//   return ` The returned values are: ${args}`;
+// }
+// console.log(sum(677, 987, 345));
 
 // passing objects as an arguments in functions
-function ecomm(anyobject) {
-  console.log(
-    `Username is ${anyobject.username} and Password is ${anyobject.password}`
-  );
-}
-ecomm({
-  username: "johndoe",
-  password: "PASSWORD",
-});
+// function ecomm(anyobject) {
+//   console.log(
+//     `Username is ${anyobject.username} and Password is ${anyobject.password}`
+//   );
+// }
+// ecomm({
+//   username: "johndoe",
+//   password: "PASSWORD",
+// });
 
 // Passing arrays as an arguments in Functions
-function zerodha(anyarray) {
-  console.log(
-    `The Client Id is ${anyarray[0]} and the profit of Client is ${anyarray[1]}`
-  );
-}
-zerodha(["875434ZERODHA", "Rs 87568.00"]);
+// function zerodha(anyarray) {
+//   console.log(
+//     `The Client Id is ${anyarray[0]} and the profit of Client is ${anyarray[1]}`
+//   );
+// }
+// zerodha(["875434ZERODHA", "Rs 87568.00"]);
 
 // Scopes in Javascript
+// var c = 456; // global scope
+// let a = 768;
+// if (true) {
+//   let a = 76;
+//   const b = 56;
+// var c = 234;
+// c = 234;
+//   console.log(a);
+// }
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// Scope and mini Hoisting in Javascript
+
+// function one1() {
+//   const user1 = "Alex";
+//   function two2() {
+//     const user2 = "Mike";
+//     console.log(`User outside inner function :${user1}`);
+//   }
+//   console.log(user2);
+//   two2();
+// }
+
+// one1();
+
+// Scoping inside if else statements
+// if (true) {
+//   const username = "Levis";
+//   if (username === "Levis") {
+//     const website = " insta";
+//     console.log(username + website);
+//   }
+//   console.log(website);
+// }
+// console.log(username);
+
+// console.log(addnum(67));
+// function addnum(num) {
+//   return num * 78;
+// } // This one will execute because its normal function
+
+// console.log(multiply(56));
+// const multiply = function (num) {
+//   return num * 65;
+// }; // this will not execute because we cant call function here before intialization
+
+// This keyword in Javascript
+// const client = "Alex";
+// const user = {
+//   client: "Mike",
+//   price: 875,
+//   message: function () {
+//     console.log(`${this.client}, welcome to the website`);
+//     console.log(this);
+//   },
+// };
+// user.message();
+
+function tea() {
+  console.log(this);
+}
+tea();

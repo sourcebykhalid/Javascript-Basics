@@ -1,1 +1,1 @@
-PASSWORD
+console.log(user2);
