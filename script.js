@@ -806,7 +806,22 @@
 // };
 // user.message();
 
-function tea() {
-  console.log(this);
-}
-tea();
+// function tea() {
+//   console.log(this);
+// }
+// tea();
+
+// Arrow Functions in javascript
+// Explicit return in Arrow Functions
+const tech = (name, tech) => {
+  console.log(
+    `${name} is currently following the roadmap of ${tech} techonology`
+  );
+  // let username = "Alex";
+  // console.log(this.username); // Will return undefined
+};
+tech("Khalid", "Frontend");
+
+// Implicit return in Arrow Functions
+const addnums = (num1, num2) => num1 + num2;
+console.log(addnums(67, 8876));
