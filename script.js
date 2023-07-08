@@ -794,7 +794,7 @@
 //   return num * 65;
 // }; // this will not execute because we cant call function here before intialization
 
-// This keyword in Javascript
+// This keyword in Javascript // only used in objects not in functions
 // const client = "Alex";
 // const user = {
 //   client: "Mike",
