@@ -859,41 +859,141 @@
 // }
 
 // Switch case in control flow
-const day = new Date().getDay();
-switch (day) {
-  case 0:
-    console.log("its Sunday");
-    break;
-  case 1:
-    console.log("its Monday");
-    break;
-  case 2:
-    console.log("its Tuesday");
-    break;
-  case 3:
-    console.log("its Wednesday");
-    break;
-  case 4:
-    console.log("its Thursday");
-    break;
-  case 5:
-    console.log("its Friday");
-    break;
-  default:
-    console.log("weekend");
-}
+// const day = new Date().getDay();
+// switch (day) {
+//   case 0:
+//     console.log("its Sunday");
+//     break;
+//   case 1:
+//     console.log("its Monday");
+//     break;
+//   case 2:
+//     console.log("its Tuesday");
+//     break;
+//   case 3:
+//     console.log("its Wednesday");
+//     break;
+//   case 4:
+//     console.log("its Thursday");
+//     break;
+//   case 5:
+//     console.log("its Friday");
+//     break;
+//   default:
+//     console.log("weekend");
+// }
 
-const month = "jan";
-switch (month) {
-  case "jan":
-    console.log("January");
-    break;
-  case "feb":
-    console.log("February");
-    break;
-  case "mar":
-    console.log("March");
-    break;
-  default:
-    console.log("Other months");
+// const month = "jan";
+// switch (month) {
+//   case "jan":
+//     console.log("January");
+//     break;
+//   case "feb":
+//     console.log("February");
+//     break;
+//   case "mar":
+//     console.log("March");
+//     break;
+//   default:
+//     console.log("Other months");
+// }
+
+// Truthy and Falsey values in Conditionals
+// Falsy Values :> falsy, 0 ,-0, BigInt, "", null, undefined, NaN
+// Truthy Values:> true, [], "0", 1, "false", "  ", {}, function(){}
+// const email = "alexmorgan56@gmail.com";
+// const email = "";
+// const email = [];
+// const email = {};
+// if (email) {
+//   console.log("Email id is Correct");
+// } else {
+//   console.log("Invalid Email Id");
+// }
+// if (email.length === 0) {
+//   console.log("Array is empty");
+// }
+// if (Object.keys(email).length === 0) {
+//   console.log("Empty Object");
+// }
+
+// Nullish Coalescing Operator (??): null undefined
+// let val1 = 56 ?? 87;
+// let val1 = null ?? 76;
+// let val1 = undefined ?? 45;
+// let val1 = null ?? 87 ?? 56;
+// console.log(val1);
+
+// Ternary Operator
+// let age = 14;
+// let res = age >= 18 ? "Allowed" : "Not allowed";
+// console.log(res);
+
+// For Loop in Javascript
+// Iterations (For Loop)
+// printing the table from 2 to 5 using for loop
+// for (i = 2; i <= 5; i++) {
+//   //   console.log(`Number is: ${i}`);
+//   console.log(" ________   ");
+
+//   for (j = 1; j <= 10; j++) {
+//     console.debug(`${i} * ${j} = ` + i * j);
+//   }
+// }
+// let myArray = ["Java", "Javascript", "Swift", "Golang", "Python"];
+// for (let index = 0; index < myArray.length; index++) {
+//   if (index == 2) {
+//     console.log("Swift is the Ultimate language");
+//     // break
+//     continue;
+//   }
+//   const element = myArray[index];
+//   console.log(element);
+// }
+
+// Break & Continue in Loops
+// for (let i = 1; i <= 12; i++) {
+//   if (i == 6) {
+//     console.log(`No more Code running  from Value 5`);
+//     break;
+//   }
+//   console.log(`Value is ${i} `);
+// }
+
+// While loop in Javascript
+// let i = 1;
+// while (i <= 24) {
+//   console.log(i);
+//   i = i + 2;
+// }
+
+// let myArr = ["one", "two", "three", "four", "five"];
+// let arr = 0;
+// while (arr < myArr.length) {
+//   console.log(`value is ${myArr[arr]}`);
+//   arr = arr + 1;
+// }
+
+// Do While loop in Javascript // At least it executes once
+// let value = 2;
+// do {
+//   console.log(`Hello`);
+//   value++;
+// } while (value <= 12);
+
+// High Order Array Loops
+// 1. For of loop
+const arr1 = [67, 4, 52, 5, 6, 57];
+// for (const num of arr1) {
+//   console.log(num);
+//   //   if (num === 5) {
+//   //     console.log("Ends here");
+//   //     break;
+//   //   }
+// }
+// console.log("Loop ends");
+
+let str = "Welcome Here";
+for (const string of str) {
+  //   console.log(`${string}`);
 }
