@@ -827,9 +827,73 @@
 // console.log(addnums(67, 8876));
 
 // Immediately Invoked Function Expressions (IIFE)
-(function chai(id) {
-  console.log(`DB Connected with id: ${id}`);
-})(789432);
-(() => {
-  console.log(`DB Disconnected`);
-})();
+// (function chai(id) {
+//   console.log(`DB Connected with id: ${id}`);
+// })(789432);
+// (() => {
+//   console.log(`DB Disconnected`);
+// })();
+
+// Control Flow
+// Conditionals (If else)
+// const temperature = 79;
+// if (temperature <= 35) {
+//   console.log("Moderate temperature");
+// } else {
+//   console.log("Temperature is hot today");
+// }
+
+// If else with multiple conditions
+//using logical operators && and ||
+// let cartvalue = 4;
+// let price = 5999;
+// if (cartvalue >= 4 && price >= 8000) {
+//   console.log("Discount availed 40% with 4 items");
+// } else {
+//   console.log("No discount available");
+// }
+// if (cartvalue >= 4 || price >= 8000) {
+//   console.log("Discount available");
+// } else {
+//   console.log("no Discount");
+// }
+
+// Switch case in control flow
+const day = new Date().getDay();
+switch (day) {
+  case 0:
+    console.log("its Sunday");
+    break;
+  case 1:
+    console.log("its Monday");
+    break;
+  case 2:
+    console.log("its Tuesday");
+    break;
+  case 3:
+    console.log("its Wednesday");
+    break;
+  case 4:
+    console.log("its Thursday");
+    break;
+  case 5:
+    console.log("its Friday");
+    break;
+  default:
+    console.log("weekend");
+}
+
+const month = "jan";
+switch (month) {
+  case "jan":
+    console.log("January");
+    break;
+  case "feb":
+    console.log("February");
+    break;
+  case "mar":
+    console.log("March");
+    break;
+  default:
+    console.log("Other months");
+}
