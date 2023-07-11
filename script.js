@@ -983,7 +983,7 @@
 
 // High Order Array Loops
 // 1. For of loop
-const arr1 = [67, 4, 52, 5, 6, 57];
+// const arr1 = [67, 4, 52, 5, 6, 57];
 // for (const num of arr1) {
 //   console.log(num);
 //   //   if (num === 5) {
@@ -993,7 +993,163 @@ const arr1 = [67, 4, 52, 5, 6, 57];
 // }
 // console.log("Loop ends");
 
-let str = "Welcome Here";
-for (const string of str) {
-  //   console.log(`${string}`);
-}
+// let str = "Welcome Here";
+// for (const string of str) {
+//   console.log(`${string}`);
+// }
+
+// Maps in Javascript
+// const map = new Map();
+// map.set("Java", "Android dev");
+// map.set("Javascript", "Web dev");
+// map.set("Swift", "IOS dev");
+// map.set("C#", "Gaming dev");
+// console.log(map);
+
+// For of in map
+// for ([key, value] of map) {
+//   console.log(key, ":", value);
+// }
+// for (const key in map) {
+//   {
+//     console.log(key);
+//   }
+// }
+
+// For in Loop for Objects
+// let person = { name: "John Doe", age: 30, city: "New York" };
+// for (let key in person) {
+//   console.log(`${key} : ${person[key]}`);
+// }
+
+// For in Loop for Arrays
+// const cars = ["Gt", "MclaRen", "ferrari", "cruiser"];
+// for (const key in cars) {
+//   {
+//     console.log(cars[key]);
+//   }
+// }
+
+// For each() loop in Javascript
+// const names = ["alex", "morgan", "mike", "sam"];
+// names.forEach((nval) => {
+//   console.log(nval);
+//   console.log(nval[2]);
+// });
+
+// using seperate function
+// function print(item) {
+//   console.log(item);
+// }
+// names.forEach(print);
+
+// const cars = [
+//   {
+//     carName: "Suzuki",
+//     modelName: "Ciaz",
+//   },
+//   {
+//     carName: "Honda",
+//     modelName: "City",
+//   },
+//   {
+//     carName: "Volkwagen",
+//     modelName: "Vento",
+//   },
+// ];
+// cars.forEach((item) => {
+//   console.log(`${item.carName} : ${item.modelName}`);
+//   console.log(item.modelName);
+// });
+
+// Filter map and reduce in Javascript
+// 1. filter()
+// const values = [98, 34, 12, 54, 76, 3, 5, 87, 256];
+// const newNums = values.filter((num) => num > 23); // implicit return
+// const newValues = values.filter((num) => {
+//   return num > 40; // returns the values greater than 40
+//   // num > 40; // return an empty array
+// });
+// console.log(`${newNums} \n ${newValues}`);
+// console.log(newNums);
+// console.log(newValues);
+
+// const books = [
+//   {
+//     title: "The Great Gatsby",
+//     genre: "Fiction",
+//     publish: 1989,
+//     edition: 2009,
+//   },
+//   {
+//     title: "Great minds",
+//     genre: "Non-Fiction",
+//     publish: 2015,
+//     edition: 2023,
+//   },
+//   {
+//     title: "The art of war",
+//     genre: "Non-Fiction",
+//     publish: 2010,
+//     edition: 2020,
+//   },
+//   {
+//     title: "Kashmir",
+//     genre: "History",
+//     publish: 2089,
+//     edition: 2015,
+//   },
+//   {
+//     title: "IKIGAI",
+//     genre: "Science",
+//     publish: 2002,
+//     edition: 2019,
+//   },
+// ];
+
+// const userBooks = books.filter((bookN) => {
+//   // return bookN.genre === "Non-Fiction";
+//   return bookN.edition >= 2015 && bookN.genre === "Non-Fiction";
+//   // return bookN.edition === 2010;
+// });
+// console.log(userBooks);
+
+// 2.map()   // Chaining in map()
+// const nums = [34, 23, 76, 34, 65];
+// const result = nums
+//   .map((num) => num + 29000)
+//   .map((num) => num * 10)
+//   .map((num) => num - 2020)
+//   .filter((num) => num > 288320);
+// console.log(`New Numbers are: ${result}`);
+// console.log(result);
+
+// 3. Reduce() in Javascript
+
+// const numbers = [45, 32, 67, 34, 98, 34];
+// const result = numbers.reduce((acc, cValue) => {
+//   console.log(`Accumlator: ${acc}  Current value: ${cValue}`);
+//   return acc + cValue;
+// }, 0);
+// console.log(result);
+
+const courses = [
+  {
+    course: "Java",
+    price: 9899,
+  },
+  {
+    course: "Javascript",
+    price: 8899,
+  },
+  {
+    course: "Python",
+    price: 7899,
+  },
+  {
+    course: "Swift",
+    price: 10899,
+  },
+];
+const totalPay = courses.reduce((acc, item) => acc + item.price, 0);
+console.log(`Total Payable amount after discount is: Rs${totalPay}.00`);

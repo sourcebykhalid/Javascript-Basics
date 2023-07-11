@@ -1,1 +1,1 @@
-break;
+console.log(newNums);
