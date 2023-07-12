@@ -1114,6 +1114,17 @@
 // });
 // console.log(userBooks);
 
+// using reverse method on map of an Array
+// let myArray = [1, 2, 3, 4];
+
+// const returnValue = myArray
+//   .map((element) => {
+//     return element * element;
+//   })
+//   .reverse();
+
+// console.log(returnValue);
+
 // 2.map()   // Chaining in map()
 // const nums = [34, 23, 76, 34, 65];
 // const result = nums
@@ -1155,5 +1166,39 @@
 // console.log(`Total Payable amount after discount is: RS ${totalPay}.00`);
 
 // DOM in Javascript
-document.getElementById("btn3").innerHTML = "Button One";
-document.getElementById("btn4").innerHTML = "Button Two";
+// getting element by id
+// let doc1 = document.getElementById("btn3");
+// doc1.innerHTML = "Button One";
+// let doc2 = document.getElementById("btn4");
+// doc2.innerHTML = "Button Two";
+// doc2.style.backgroundColor = "red";
+
+// Getting element by Query Selector
+let doc3 = document.querySelector("#btn4");
+doc3.style.backgroundColor = "steelblue";
+
+// Getting multiple elements by query selector all
+const tempLi = document.querySelectorAll("li");
+tempLi[7].style.color = "green";
+
+const tempAnc = document.querySelectorAll("a");
+tempAnc[0].style.color = "orange";
+
+// Using forEach() to select all elements
+tempAnc.forEach((a) => {
+  a.style.color = "blue";
+});
+
+// Getting elements by className
+const textGs = document.getElementsByClassName("vertical-desc3");
+
+// Since "textGs" returns a nodelist, So we have to convert it into an array first
+const textCh = Array.from(textGs);
+textCh.map((intr) => {
+  intr.style.color = "orange";
+});
+textCh.forEach((int) => {
+  int.style.backgroundColor = "grey";
+  int.innerText = "FrontEnd\nFrontEnd\nFrontEnd\nFrontEnd\n FrontEnd";
+  int.style.padding = "42px";
+});
