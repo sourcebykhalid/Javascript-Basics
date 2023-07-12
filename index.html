@@ -85,10 +85,10 @@
 
             </div>
         </section>
-
-        <button id="btn1">Button1</button>
-        <button id="btn2">Button2</button>
-
+        <div class="buttons-num">
+            <button id="btn3">Button1</button>
+            <button id="btn4">Button2</button>
+        </div>
     </main>
     <footer>
         <div class="flex">
@@ -134,22 +134,22 @@
 
     <script>
         let add1 = (function () {
-            let count = 0;
+            let count = 500000;
             return function () {
-                count++;
+                count = count + 1000;
                 this.innerText = count;
             }
         })();
         let add2 = (function () {
-            let count = 0;
+            let count = 500000;
             return function () {
-                count++;
+                count = count + 1000;
                 this.innerText = count;
             }
         })();
 
-        btn1.onclick = add1;
-        btn2.onclick = add2;
+        btn3.onclick = add1;
+        btn4.onclick = add2;
     </script>
 </body>
 

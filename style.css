@@ -369,3 +369,15 @@ footer {
     display: flex;
   }
 }
+.buttons-num button {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-left: 22rem;
+  padding: 0.4rem;
+  border-radius: 8%;
+  background-color: cadetblue;
+  color: #000;
+  cursor: pointer;
+  width: 6rem;
+}

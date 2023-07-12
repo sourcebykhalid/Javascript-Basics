@@ -1133,23 +1133,27 @@
 // }, 0);
 // console.log(result);
 
-const courses = [
-  {
-    course: "Java",
-    price: 9899,
-  },
-  {
-    course: "Javascript",
-    price: 8899,
-  },
-  {
-    course: "Python",
-    price: 7899,
-  },
-  {
-    course: "Swift",
-    price: 10899,
-  },
-];
-const totalPay = courses.reduce((acc, item) => acc + item.price, 0);
-console.log(`Total Payable amount after discount is: Rs${totalPay}.00`);
+// const courses = [
+//   {
+//     course: "Java",
+//     price: 9899,
+//   },
+//   {
+//     course: "Javascript",
+//     price: 8899,
+//   },
+//   {
+//     course: "Python",
+//     price: 7899,
+//   },
+//   {
+//     course: "Swift",
+//     price: 10899,
+//   },
+// ];
+// const totalPay = courses.reduce((acc, item) => acc + item.price, 0);
+// console.log(`Total Payable amount after discount is: RS ${totalPay}.00`);
+
+// DOM in Javascript
+document.getElementById("btn3").innerHTML = "Button One";
+document.getElementById("btn4").innerHTML = "Button Two";
