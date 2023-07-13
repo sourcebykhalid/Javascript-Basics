@@ -223,6 +223,7 @@ footer {
 } */
 .flex ul li {
   color: aliceblue;
+  margin-left: 6.5rem;
 }
 @media screen and (max-width: 960px) {
   .navbar {

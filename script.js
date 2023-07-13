@@ -1174,31 +1174,88 @@
 // doc2.style.backgroundColor = "red";
 
 // Getting element by Query Selector
-let doc3 = document.querySelector("#btn4");
-doc3.style.backgroundColor = "steelblue";
+// let doc3 = document.querySelector("#btn4");
+// doc3.style.backgroundColor = "steelblue";
 
-// Getting multiple elements by query selector all
-const tempLi = document.querySelectorAll("li");
-tempLi[7].style.color = "green";
+// // Getting multiple elements by query selector all
+// const tempLi = document.querySelectorAll("li");
+// tempLi[7].style.color = "green";
 
-const tempAnc = document.querySelectorAll("a");
-tempAnc[0].style.color = "orange";
+// const tempAnc = document.querySelectorAll("a");
+// tempAnc[0].style.color = "orange";
 
-// Using forEach() to select all elements
-tempAnc.forEach((a) => {
-  a.style.color = "blue";
-});
+// // Using forEach() to select all elements
+// tempAnc.forEach((a) => {
+//   a.style.color = "blue";
+// });
 
-// Getting elements by className
-const textGs = document.getElementsByClassName("vertical-desc3");
+// // Getting elements by className
+// const textGs = document.getElementsByClassName("vertical-desc3");
 
 // Since "textGs" returns a nodelist, So we have to convert it into an array first
-const textCh = Array.from(textGs);
-textCh.map((intr) => {
-  intr.style.color = "orange";
-});
-textCh.forEach((int) => {
-  int.style.backgroundColor = "grey";
-  int.innerText = "FrontEnd\nFrontEnd\nFrontEnd\nFrontEnd\n FrontEnd";
-  int.style.padding = "42px";
-});
+// const textCh = Array.from(textGs);
+// textCh.map((intr) => {
+//   intr.style.color = "orange";
+// });
+// textCh.forEach((int) => {
+//   int.style.backgroundColor = "grey";
+//   int.innerText = "FrontEnd\nFrontEnd\nFrontEnd\nFrontEnd\n FrontEnd";
+//   int.style.padding = "42px";
+// });
+
+// Creating a new element in Dom
+const parent = document.querySelector(".vertical");
+// console.log(parent);
+// console.log(parent.children);
+// console.log(parent.children[0].innerHTML);
+// for (let i = 0; i < parent.children.length; i++) {
+//   console.log(parent.children[i].innerHTML);
+// }
+parent.children[1].style.color = "orange";
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+const select = document.querySelector(".vertical");
+// console.log(select);
+// console.log(select.parentElement);
+// console.log(select.nextElementSibling);
+// console.log("Nodes are: ", parent.childNodes);
+const heading = document.createElement("input");
+console.log(heading);
+heading.setAttribute("type", "submit");
+heading.className = "heading";
+heading.style.color = "black";
+heading.style.backgroundColor = "white";
+heading.style.cursor = "pointer";
+heading.style.padding = "6px";
+heading.style.marginLeft = "38rem";
+heading.textContent = "Submit";
+document.body.appendChild(heading);
+
+// Edit & Remove Elements in DOM
+function addLi(Li) {
+  const li = document.createElement("li");
+  li.style.marginLeft = "6.5rem";
+  li.style.cursor = "pointer";
+  li.appendChild(document.createTextNode(Li));
+  document.querySelector(".footer-second").appendChild(li);
+}
+addLi("Chat with Us!");
+addLi("Drop your feedback");
+
+// Edit element
+const editLi = document.querySelector(".footer-second li:nth-child(3)");
+const newLi = document.createElement("li");
+newLi.style.marginLeft = "6.5rem";
+newLi.style.cursor = "pointer";
+newLi.textContent = "Hire me!";
+editLi.replaceWith(newLi);
+
+// Replace with
+const firstLi = document.querySelector(".footer-second li:first-child");
+const newFLi = document.createElement("li");
+newFLi.textContent = "My Projects";
+firstLi.replaceWith(newFLi);
+
+// Remove Element
+const reMove = document.querySelector(".footer-second li:nth-child(2)");
+reMove.remove();
