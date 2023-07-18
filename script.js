@@ -12,7 +12,7 @@
 // DOM in JS
 // document.createElement("div");
 // let username = "Alex";
-// console.log(username);
+// alert(username);
 // document.write("<h1>Hello, my name is" + username + "</h1>");
 // function myFunction() {
 //   document.write("Hello World");
@@ -25,7 +25,7 @@
 //   while (x > 0) {
 //     arr.push(x % 10);
 //     x = Math.floor(x / 10);
-//     console.log(arr);
+//     alert(arr);
 //   }
 // };
 // isPalindrome(456);
@@ -34,10 +34,10 @@
 // let n = prompt("Enter the value of n");
 // let sum = 0;
 // for (let i = 1; i < 20; i++) {
-//   console.log("Number is: " + i + 808);
+//   alert("Number is: " + i + 808);
 //   sum *= i;
 // }
-// console.log(sum);
+// alert(sum);
 
 // For in Loop
 // let marks = {
@@ -47,26 +47,26 @@
 //   rick: 98,
 // };
 // for (let m in marks) {
-//   console.log(`Marks of  ${m} are  ${marks[m]}`);
+//   alert(`Marks of  ${m} are  ${marks[m]}`);
 // }
 
 // For of loop
 // const names = ["Apple", "Microsoft", "Chat-Gpt", "Atlassian"];
 // for (let a of names[1]) {
-//   console.log(a);
+//   alert(a);
 // }
 
 // While Loops in JS
 // let i = 0;
 // while (i <= 10) {
-//   console.log(i);
+//   alert(i);
 //   i++;
 // }
 
 // Do while Loop.  This loop executes at least once.
 // let i = 0;
 // do {
-//   console.log(i);
+//   alert(i);
 //   i++;
 // } while (i < 20);
 
@@ -129,7 +129,7 @@
 //   return (a + b + c + d) / 4;
 // };
 // let result = average(56, 2, 47, 87);
-// console.log(result);
+// alert(result);
 // let coffeeN = prompt("What type of coffee would like?");
 // let sugar = prompt("How much sugar u want in your coffee?");
 // let cups = prompt("How many cups of Coffee u would like to have?");
@@ -144,20 +144,20 @@
 // Higher Order Functions in Javcript
 // function wifi() {
 //   setTimeout(() => {
-//     console.log("wifi is connected Again");
+//     alert("wifi is connected Again");
 //   }, 3000);
 // }
-// console.log("wifi disconnected");
+// alert("wifi disconnected");
 // wifi();
 
 // shorthand for arrow functions in Javascript
 // const result = (num) => num * num;
-// console.log(result(45));
+// alert(result(45));
 
 // Callback Functions in Javascript
 
 // function myDisplayer(some) {
-//   console.log("done");
+//   alert("done");
 // }
 // function myCalculator(num1, num2) {
 //   const result = num1 + num2;
@@ -165,14 +165,14 @@
 // }
 // const sum = myCalculator(3465, 578);
 // myDisplayer(sum);
-// console.log("hh");
+// alert("hh");
 
 // const model = (name, year) => {
-//   console.log(`The name of this car is ${name}`);
+//   alert(`The name of this car is ${name}`);
 //   year();
 // };
 // const year = (id) => {
-//   console.log(`The name of this car is ${id} and its from year ${year}`);
+//   alert(`The name of this car is ${id} and its from year ${year}`);
 // };
 // year(2017);
 // model("Mclarren");
@@ -181,7 +181,7 @@
 //   var script = document.createElement("script");
 //   script.src = src;
 //   script.onload = function () {
-//     console.log("Loaded Script with SRC: " + src);
+//     alert("Loaded Script with SRC: " + src);
 //     callback(src);
 //   };
 //   document.body.appendChild(script);
@@ -221,21 +221,21 @@
 //   case 6:
 //     day = "Saturday";
 // }
-// console.log(day);
+// alert(day);
 // let day = "Thursday";
 
 // switch (day) {
 //   case "Monday":
-//     console.log(`on ${day} there is a standup meet in office`);
+//     alert(`on ${day} there is a standup meet in office`);
 //     break;
 //   case "Tuesday":
-//     console.log(`on ${day} you have to finish the pending task`);
+//     alert(`on ${day} you have to finish the pending task`);
 //     break;
 //   case "Wednesday":
-//     console.log(`on ${day} you have to push the code to CLI`);
+//     alert(`on ${day} you have to push the code to CLI`);
 //     break;
 //   case "Thursday":
-//     console.log(`on ${day} you have a one on one meet with TL`);
+//     alert(`on ${day} you have a one on one meet with TL`);
 //   default:
 // }
 
@@ -263,22 +263,22 @@
 // let pet = "snake";
 // switch (pet) {
 //   case pets[0]:
-//     console.log("I own a lizard");
+//     alert("I own a lizard");
 //     break;
 //   case pets[1]:
-//     console.log("I own a dog");
+//     alert("I own a dog");
 //     break;
 //   case pets[2]:
-//     console.log("I own a cat");
+//     alert("I own a cat");
 //     break;
 //   case pets[3]:
-//     console.log("I own a snake");
+//     alert("I own a snake");
 //     break;
 //   case pets[4]:
-//     console.log("I own a parrot");
+//     alert("I own a parrot");
 //     break;
 //   default:
-//     console.log("I don't own a pet");
+//     alert("I don't own a pet");
 //     break;
 // }
 
@@ -318,7 +318,7 @@
 //   exp: 3,
 //   showF: function () {
 //     setTimeout(() => {
-//       console.log(
+//       alert(
 //         `The name of Candidate is ${this.name} \n The role is ${this.role}`
 //       );
 //     }, 1000);
@@ -328,17 +328,17 @@
 
 // let result = (num1, num2) => ((num1 + num2) * num1) / num2;
 // let res = result(345, 234);
-// console.log(res);
+// alert(res);
 
 // Fill & Filter Array methods in Javasript
 // var arr = [4, 2, 6, 8, 3, 2, 63, 6, 35];
-// console.log(arr.concat(34));
-// console.log(arr.fill(56, 3, 5));
+// alert(arr.concat(34));
+// alert(arr.fill(56, 3, 5));
 // In Array fill method the Start range is inclusive while the end range is exclusive
 
-// console.log(arr.filter(6, 8, 3));
+// alert(arr.filter(6, 8, 3));
 // var result = arr.filter((num1) => num1 != 4);
-// console.log(result);
+// alert(result);
 
 // Objects in Javascript
 // var person = new Object({
@@ -354,14 +354,14 @@
 //   },
 // });
 // var courseList = true;
-// console.log(person.firstName);
-// console.log(person.getCourseCount());
+// alert(person.firstName);
+// alert(person.getCourseCount());
 // person.buyCourse("React JS");
 // person.buyCourse("Angular");
 // person.buyCourse("DSA");
-// console.log(person.getCourseCount());
+// alert(person.getCourseCount());
 // person.firstName = "Alex";
-// console.log(person.getCourseCount());
+// alert(person.getCourseCount());
 
 // // Factory Functions in Javascript
 // function createCourse(title, title1) {
@@ -377,9 +377,9 @@
 // }
 // const course = createCourse("Javascript", "React Js");
 // course.enroll();
-// console.log(course);
+// alert(course);
 // const arrow = (count) => {
-//   for (let i = 0; i < count; i++) console.log("Hello");
+//   for (let i = 0; i < count; i++) alert("Hello");
 // };
 // arrow(5);
 
@@ -390,16 +390,16 @@
 // const result = calculus(34, 76, function (num1, num2) {
 //   return num1 * num2;
 // });
-// console.log(result);
+// alert(result);
 // const subtr = (a, b) => a - b;
 // const subRes = calculus(45, 78, subtr);
-// console.log(subRes);
+// alert(subRes);
 
 // function mult(a, b) {
 //   return a * b;
 // }
 // const mulRes = calculus(34, 23, mult);
-// console.log(mulRes);
+// alert(mulRes);
 
 // Find() method in JAvascript
 // Find() methods returns the value of first element that matches the condition
@@ -409,12 +409,12 @@
 // };
 // const result = arr.find(neg);
 // // const result = arr.findIndex(neg);
-// console.log(result);
+// alert(result);
 
 // Foreach() method in Javascript
 // For each loop is used to iterate over an array and perform some action on every item present inside
 // arr.forEach((num, i) => {
-//   console.log("array num", num, i);
+//   alert("array num", num, i);
 // });
 
 //
@@ -443,21 +443,21 @@
 //   });
 // }
 // getCheese().then((pizza) => {
-//   console.log("Here is the Cheeze", cheeze);
+//   alert("Here is the Cheeze", cheeze);
 //   return bakePizza(pizza);
 // });
 // async function orderPizza() {
 //   const cheeze = await getCheese();
 //   const dough = await makeDough(cheeze);
 //   const pizza = await bakePizza(dough);
-//   console.log("Here is the Pizza", pizza);
+//   alert("Here is the Pizza", pizza);
 // }
 // orderPizza();
 
 // Ques1
 // function fruit() {
-//   console.log(name);
-//   console.log(price);
+//   alert(name);
+//   alert(price);
 
 //   var name = "mango";
 //   let price = 45;
@@ -469,7 +469,7 @@
 //   return number / 2;
 // };
 // let res = divideByTwo(543);
-// console.log(res);
+// alert(res);
 
 // // Ques3
 // function convertToUpperCaseAsync(inputString) {
@@ -485,7 +485,7 @@
 
 // convertToUpperCaseAsync(inputString)
 //   .then((uppercaseString) => {
-//     console.log("Uppercase:", uppercaseString);
+//     alert("Uppercase:", uppercaseString);
 //   })
 //   .catch((error) => {
 //     console.error("Error:", error.message);
@@ -499,117 +499,117 @@
 // Conversion of Datatypes in Javascript
 // let isLoggedIn = "Mustafa";
 // let booleanIsLoggedIn = Boolean(isLoggedIn);
-// console.log(booleanIsLoggedIn);
+// alert(booleanIsLoggedIn);
 
 // let str1 = "Mustafa";
 // let str2 = "Khalid";
 // let str3 = str1 + str2;
-// console.log(str3);
+// alert(str3);
 
 // const id = "6736";
 // const anotherId = "6736";
-// console.log(id === anotherId);
+// alert(id === anotherId);
 
 // const arr = ["df", "er"];
-// console.log(typeof arr);
+// alert(typeof arr);
 
 // const func = function () {
-//   console.log("Hello");
+//   alert("Hello");
 // };
 // func();
-// console.log(typeof func);
+// alert(typeof func);
 
 // Heap memory(Non-Primitive) and Stack memory(Primitive) in JS
 
 // Strings and String methods in JAvascript
 // let name1 = "Alex";
 // let name2 = "Morgan";
-// console.log(name1 + " " + name2);
-// console.log(`${name1.toLocaleUpperCase()}  ${name2.toUpperCase()}`);
-// console.log(`${name1.toUpperCase()}  ${name2.toUpperCase()}`);
+// alert(name1 + " " + name2);
+// alert(`${name1.toLocaleUpperCase()}  ${name2.toUpperCase()}`);
+// alert(`${name1.toUpperCase()}  ${name2.toUpperCase()}`);
 // const str = new String("Good Morni");
-// console.log(str);
+// alert(str);
 
 // Numbers and Maths in Javascript
 // const num = 64363.4325678;
-// console.log(num.toString());
-// console.log(typeof num);
+// alert(num.toString());
+// alert(typeof num);
 // // const numb = new Number(65466);
-// console.log(num);
-// console.log(num.toFixed(2));
-// console.log(num.toPrecision(5));
+// alert(num);
+// alert(num.toFixed(2));
+// alert(num.toPrecision(5));
 // const hundreds = 10000000000;
-// console.log(hundreds.toLocaleString("en-US"));
+// alert(hundreds.toLocaleString("en-US"));
 
 // Maths in Javascript
-// console.log(Math.PI);
-// console.log(Math.abs(-567));
-// console.log(Math.round(4566.4433));
-// console.log(Math.floor(45.67));
-// console.log(Math.ceil(45.12));
-// console.log(Math.min(45, 24, 75, 8, 4));
-// console.log(Math.max(53, 6, 2, 5, 3, 5));
-// console.log(Math.random());
-// console.log(Math.random() * 10 + 1);
-// console.log(Math.floor(Math.random() * 10) + 1);
+// alert(Math.PI);
+// alert(Math.abs(-567));
+// alert(Math.round(4566.4433));
+// alert(Math.floor(45.67));
+// alert(Math.ceil(45.12));
+// alert(Math.min(45, 24, 75, 8, 4));
+// alert(Math.max(53, 6, 2, 5, 3, 5));
+// alert(Math.random());
+// alert(Math.random() * 10 + 1);
+// alert(Math.floor(Math.random() * 10) + 1);
 
 // const min = 45;
 // const max = 98;
 
-// console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+// alert(Math.floor(Math.random() * (max - min + 1)) + min);
 
 // Date  and Time in JAvascript
 // const d = new Date();
-// console.log(d);
-// console.log(d.toString());
-// console.log(d.toLocaleString());
-// console.log(d.toDateString());
-// console.log(typeof d);
+// alert(d);
+// alert(d.toString());
+// alert(d.toLocaleString());
+// alert(d.toDateString());
+// alert(typeof d);
 // let myDate = new Date(2023, 6, 5, 3, 55);
-// console.log(myDate.toLocaleString());
+// alert(myDate.toLocaleString());
 
 // let myTimeStamp = Date.now();
-// console.log(myTimeStamp);
+// alert(myTimeStamp);
 
 // Array in Javascript
 // const arr = [1, true, "Hello", null];
 // const arr2 = ["ddf", "wshgsh"];
-// console.log(arr.concat(arr2));
+// alert(arr.concat(arr2));
 // arr.push(8);
-// console.log(arr);
+// alert(arr);
 // arr.pop();
-// console.log(arr);
+// alert(arr);
 // arr.unshift(56, 98);
-// console.log(arr);
+// alert(arr);
 // arr.shift();
-// console.log(arr);
-// console.log(arr.includes(98));
+// alert(arr);
+// alert(arr.includes(98));
 // const arr2 = arr.join();
-// console.log(arr);
-// console.log(arr2);
+// alert(arr);
+// alert(arr2);
 
 // const fruits1 = ["apple", "Mango", "Banana"];
 // const fruits2 = ["Cherry", "Papaya", "Blueberry"];
 // fruits1.push(fruits2);
-// console.log(fruits1);
+// alert(fruits1);
 
 // const tech = ["Java", "Javascript", "Sql"];
 // const framework = ["React js", "Mongodb"];
 // tech.push(framework);
-// console.log(tech.concat(framework));
-// console.log(tech[3]);
-// console.log(tech[3][1]);
-// console.log([...tech, ...framework]);
+// alert(tech.concat(framework));
+// alert(tech[3]);
+// alert(tech[3][1]);
+// alert([...tech, ...framework]);
 
 // const myArray = [1, 3, 5, [5, 3, 6, 2], [3, 6, [3, 2]]];
-// console.log(myArray.flat(Infinity));
-// console.log(Array.isArray("Khalid"));
-// console.log(Array.from("Khalid"));
+// alert(myArray.flat(Infinity));
+// alert(Array.isArray("Khalid"));
+// alert(Array.from("Khalid"));
 // const arr1 = 567;
 // const arr2 = 567;
 // const arr3 = 567;
 // const arr4 = [678, 789];
-// console.log(Array.of(arr1, arr2, arr3));
+// alert(Array.of(arr1, arr2, arr3));
 
 // Objects in Javascript (Object Literals)
 // const mySym = Symbol("865678");
@@ -621,25 +621,25 @@
 //   tech: "Angular",
 //   exp: (x, y, z) => {
 //     setTimeout(() => {
-//       console.log("I will login within 3 seconds");
+//       alert("I will login within 3 seconds");
 //     }, 3000);
 //     return x + y * z;
 //   },
 // };
-// console.log(person.exp(45, 87, 89));
-// console.log(person.name); //Must use
-// console.log(person["name"]); // Use rarely
-// console.log(person[mySym]);
-// console.log(typeof person[mySym]);
+// alert(person.exp(45, 87, 89));
+// alert(person.name); //Must use
+// alert(person["name"]); // Use rarely
+// alert(person[mySym]);
+// alert(typeof person[mySym]);
 // person.email = "alexmorgan45@hushmail.com";
-// console.log(person["email"]);
+// alert(person["email"]);
 // Object.freeze(person);
 // person.email = "mike566@google.com";
-// console.log(person["email"]);
-// console.log(person);
+// alert(person["email"]);
+// alert(person);
 
 // person.greet = function () {
-//   console.log(`Hello ${this.name}`);
+//   alert(`Hello ${this.name}`);
 // };
 // person.greet();
 
@@ -651,26 +651,26 @@
 //   password: "Qtrrwxf343#",
 //   isLoggedIn: true,
 // };
-// // console.log("user", typeof user1 === "object");
+// // alert("user", typeof user1 === "object");
 
-// // console.log(user1);
+// // alert(user1);
 // const user2 = {
 //   userName2: "Sammy",
 //   password2: "Ltrwxf343#",
 //   isLoggedOut: false,
 // };
-// console.log("user", typeof user1 === "object");
+// alert("user", typeof user1 === "object");
 
-// console.log(user2);
+// alert(user2);
 
 // const user3 = Object.assign({}, user1, user2);
-// console.log(user3);
+// alert(user3);
 // const userRes = { ...user1, ...user2 };
-// console.log(userRes);
-// console.log(Object.keys(user1));
-// console.log(Object.values(user1));
-// console.log(Object.entries(user1));
-// console.log(user1.hasOwnProperty("isLoggedIn"));
+// alert(userRes);
+// alert(Object.keys(user1));
+// alert(Object.values(user1));
+// alert(Object.entries(user1));
+// alert(user1.hasOwnProperty("isLoggedIn"));
 
 // Object Destructuting in JAvascript
 // const sportsData = {
@@ -680,7 +680,7 @@
 //   runs: 87,
 // };
 // const { player: Cricketer } = sportsData;
-// console.log(Cricketer);
+// alert(Cricketer);
 
 // let person = {
 //   firstName: "John",
@@ -690,20 +690,20 @@
 
 // let { firstName, lastName, middleName = "", currentAge: age = 18 } = person;
 
-// console.log(middleName); // ''
-// console.log(age); // 28
-// console.log(currentAge);
+// alert(middleName); // ''
+// alert(age); // 28
+// alert(currentAge);
 
 //Functions in Javascript
 // let greet = (x) => {
 //   setTimeout(() => {
-//     console.log(`i will be logged in ${x}  seconds`);
+//     alert(`i will be logged in ${x}  seconds`);
 //   }, 3000);
 // };
 // greet(3);
 
 // function greet(firstName, lastName) {
-//   console.log("Hello " + firstName + " " + lastName);
+//   alert("Hello " + firstName + " " + lastName);
 // }
 
 // greet("Bill", "Gates");
@@ -711,24 +711,24 @@
 
 // function employee(employ) {
 //   if (!employ) {
-//     console.log("Please enter ur userid");
+//     alert("Please enter ur userid");
 //     return;
 //   }
 //   return `${employ} just logged in the system`;
 // }
 // let loggedemploy = employee("Mustafa");
-// console.log(loggedemploy);
+// alert(loggedemploy);
 
 // Functions with objects and arrays in Javascript
 // Rest Operator in Javascript
 // function sum(...args) {
 //   return ` The returned values are: ${args}`;
 // }
-// console.log(sum(677, 987, 345));
+// alert(sum(677, 987, 345));
 
 // passing objects as an arguments in functions
 // function ecomm(anyobject) {
-//   console.log(
+//   alert(
 //     `Username is ${anyobject.username} and Password is ${anyobject.password}`
 //   );
 // }
@@ -739,7 +739,7 @@
 
 // Passing arrays as an arguments in Functions
 // function zerodha(anyarray) {
-//   console.log(
+//   alert(
 //     `The Client Id is ${anyarray[0]} and the profit of Client is ${anyarray[1]}`
 //   );
 // }
@@ -753,11 +753,11 @@
 //   const b = 56;
 // var c = 234;
 // c = 234;
-//   console.log(a);
+//   alert(a);
 // }
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// alert(a);
+// alert(b);
+// alert(c);
 
 // Scope and mini Hoisting in Javascript
 
@@ -765,9 +765,9 @@
 //   const user1 = "Alex";
 //   function two2() {
 //     const user2 = "Mike";
-//     console.log(`User outside inner function :${user1}`);
+//     alert(`User outside inner function :${user1}`);
 //   }
-//   console.log(user2);
+//   alert(user2);
 //   two2();
 // }
 
@@ -778,18 +778,18 @@
 //   const username = "Levis";
 //   if (username === "Levis") {
 //     const website = " insta";
-//     console.log(username + website);
+//     alert(username + website);
 //   }
-//   console.log(website);
+//   alert(website);
 // }
-// console.log(username);
+// alert(username);
 
-// console.log(addnum(67));
+// alert(addnum(67));
 // function addnum(num) {
 //   return num * 78;
 // } // This one will execute because its normal function
 
-// console.log(multiply(56));
+// alert(multiply(56));
 // const multiply = function (num) {
 //   return num * 65;
 // }; // this will not execute because we cant call function here before intialization
@@ -800,47 +800,47 @@
 //   client: "Mike",
 //   price: 875,
 //   message: function () {
-//     console.log(`${this.client}, welcome to the website`);
-//     console.log(this);
+//     alert(`${this.client}, welcome to the website`);
+//     alert(this);
 //   },
 // };
 // user.message();
 
 // function tea() {
-//   console.log(this);
+//   alert(this);
 // }
 // tea();
 
 // Arrow Functions in javascript
 // Explicit return in Arrow Functions
 // const tech = (name, tech) => {
-//   console.log(
+//   alert(
 //     `${name} is currently following the roadmap of ${tech} techonology`
 //   );
 // let username = "Alex";
-// console.log(this.username); // Will return undefined
+// alert(this.username); // Will return undefined
 // };
 // tech("Khalid", "Frontend");
 
 // Implicit return in Arrow Functions
 // const addnums = (num1, num2) => num1 + num2;
-// console.log(addnums(67, 8876));
+// alert(addnums(67, 8876));
 
 // Immediately Invoked Function Expressions (IIFE)
 // (function chai(id) {
-//   console.log(`DB Connected with id: ${id}`);
+//   alert(`DB Connected with id: ${id}`);
 // })(789432);
 // (() => {
-//   console.log(`DB Disconnected`);
+//   alert(`DB Disconnected`);
 // })();
 
 // Control Flow
 // Conditionals (If else)
 // const temperature = 79;
 // if (temperature <= 35) {
-//   console.log("Moderate temperature");
+//   alert("Moderate temperature");
 // } else {
-//   console.log("Temperature is hot today");
+//   alert("Temperature is hot today");
 // }
 
 // If else with multiple conditions
@@ -848,54 +848,54 @@
 // let cartvalue = 4;
 // let price = 5999;
 // if (cartvalue >= 4 && price >= 8000) {
-//   console.log("Discount availed 40% with 4 items");
+//   alert("Discount availed 40% with 4 items");
 // } else {
-//   console.log("No discount available");
+//   alert("No discount available");
 // }
 // if (cartvalue >= 4 || price >= 8000) {
-//   console.log("Discount available");
+//   alert("Discount available");
 // } else {
-//   console.log("no Discount");
+//   alert("no Discount");
 // }
 
 // Switch case in control flow
 // const day = new Date().getDay();
 // switch (day) {
 //   case 0:
-//     console.log("its Sunday");
+//     alert("its Sunday");
 //     break;
 //   case 1:
-//     console.log("its Monday");
+//     alert("its Monday");
 //     break;
 //   case 2:
-//     console.log("its Tuesday");
+//     alert("its Tuesday");
 //     break;
 //   case 3:
-//     console.log("its Wednesday");
+//     alert("its Wednesday");
 //     break;
 //   case 4:
-//     console.log("its Thursday");
+//     alert("its Thursday");
 //     break;
 //   case 5:
-//     console.log("its Friday");
+//     alert("its Friday");
 //     break;
 //   default:
-//     console.log("weekend");
+//     alert("weekend");
 // }
 
 // const month = "jan";
 // switch (month) {
 //   case "jan":
-//     console.log("January");
+//     alert("January");
 //     break;
 //   case "feb":
-//     console.log("February");
+//     alert("February");
 //     break;
 //   case "mar":
-//     console.log("March");
+//     alert("March");
 //     break;
 //   default:
-//     console.log("Other months");
+//     alert("Other months");
 // }
 
 // Truthy and Falsey values in Conditionals
@@ -906,15 +906,15 @@
 // const email = [];
 // const email = {};
 // if (email) {
-//   console.log("Email id is Correct");
+//   alert("Email id is Correct");
 // } else {
-//   console.log("Invalid Email Id");
+//   alert("Invalid Email Id");
 // }
 // if (email.length === 0) {
-//   console.log("Array is empty");
+//   alert("Array is empty");
 // }
 // if (Object.keys(email).length === 0) {
-//   console.log("Empty Object");
+//   alert("Empty Object");
 // }
 
 // Nullish Coalescing Operator (??): null undefined
@@ -922,19 +922,19 @@
 // let val1 = null ?? 76;
 // let val1 = undefined ?? 45;
 // let val1 = null ?? 87 ?? 56;
-// console.log(val1);
+// alert(val1);
 
 // Ternary Operator
 // let age = 14;
 // let res = age >= 18 ? "Allowed" : "Not allowed";
-// console.log(res);
+// alert(res);
 
 // For Loop in Javascript
 // Iterations (For Loop)
 // printing the table from 2 to 5 using for loop
 // for (i = 2; i <= 5; i++) {
-//   //   console.log(`Number is: ${i}`);
-//   console.log(" ________   ");
+//   //   alert(`Number is: ${i}`);
+//   alert(" ________   ");
 
 //   for (j = 1; j <= 10; j++) {
 //     console.debug(`${i} * ${j} = ` + i * j);
@@ -943,41 +943,41 @@
 // let myArray = ["Java", "Javascript", "Swift", "Golang", "Python"];
 // for (let index = 0; index < myArray.length; index++) {
 //   if (index == 2) {
-//     console.log("Swift is the Ultimate language");
+//     alert("Swift is the Ultimate language");
 //     // break
 //     continue;
 //   }
 //   const element = myArray[index];
-//   console.log(element);
+//   alert(element);
 // }
 
 // Break & Continue in Loops
 // for (let i = 1; i <= 12; i++) {
 //   if (i == 6) {
-//     console.log(`No more Code running  from Value 5`);
+//     alert(`No more Code running  from Value 5`);
 //     break;
 //   }
-//   console.log(`Value is ${i} `);
+//   alert(`Value is ${i} `);
 // }
 
 // While loop in Javascript
 // let i = 1;
 // while (i <= 24) {
-//   console.log(i);
+//   alert(i);
 //   i = i + 2;
 // }
 
 // let myArr = ["one", "two", "three", "four", "five"];
 // let arr = 0;
 // while (arr < myArr.length) {
-//   console.log(`value is ${myArr[arr]}`);
+//   alert(`value is ${myArr[arr]}`);
 //   arr = arr + 1;
 // }
 
 // Do While loop in Javascript // At least it executes once
 // let value = 2;
 // do {
-//   console.log(`Hello`);
+//   alert(`Hello`);
 //   value++;
 // } while (value <= 12);
 
@@ -985,17 +985,17 @@
 // 1. For of loop
 // const arr1 = [67, 4, 52, 5, 6, 57];
 // for (const num of arr1) {
-//   console.log(num);
+//   alert(num);
 //   //   if (num === 5) {
-//   //     console.log("Ends here");
+//   //     alert("Ends here");
 //   //     break;
 //   //   }
 // }
-// console.log("Loop ends");
+// alert("Loop ends");
 
 // let str = "Welcome Here";
 // for (const string of str) {
-//   console.log(`${string}`);
+//   alert(`${string}`);
 // }
 
 // Maps in Javascript
@@ -1004,42 +1004,42 @@
 // map.set("Javascript", "Web dev");
 // map.set("Swift", "IOS dev");
 // map.set("C#", "Gaming dev");
-// console.log(map);
+// alert(map);
 
 // For of in map
 // for ([key, value] of map) {
-//   console.log(key, ":", value);
+//   alert(key, ":", value);
 // }
 // for (const key in map) {
 //   {
-//     console.log(key);
+//     alert(key);
 //   }
 // }
 
 // For in Loop for Objects
 // let person = { name: "John Doe", age: 30, city: "New York" };
 // for (let key in person) {
-//   console.log(`${key} : ${person[key]}`);
+//   alert(`${key} : ${person[key]}`);
 // }
 
 // For in Loop for Arrays
 // const cars = ["Gt", "MclaRen", "ferrari", "cruiser"];
 // for (const key in cars) {
 //   {
-//     console.log(cars[key]);
+//     alert(cars[key]);
 //   }
 // }
 
 // For each() loop in Javascript
 // const names = ["alex", "morgan", "mike", "sam"];
 // names.forEach((nval) => {
-//   console.log(nval);
-//   console.log(nval[2]);
+//   alert(nval);
+//   alert(nval[2]);
 // });
 
 // using seperate function
 // function print(item) {
-//   console.log(item);
+//   alert(item);
 // }
 // names.forEach(print);
 
@@ -1058,8 +1058,8 @@
 //   },
 // ];
 // cars.forEach((item) => {
-//   console.log(`${item.carName} : ${item.modelName}`);
-//   console.log(item.modelName);
+//   alert(`${item.carName} : ${item.modelName}`);
+//   alert(item.modelName);
 // });
 
 // Filter map and reduce in Javascript
@@ -1070,9 +1070,9 @@
 //   return num > 40; // returns the values greater than 40
 //   // num > 40; // return an empty array
 // });
-// console.log(`${newNums} \n ${newValues}`);
-// console.log(newNums);
-// console.log(newValues);
+// alert(`${newNums} \n ${newValues}`);
+// alert(newNums);
+// alert(newValues);
 
 // const books = [
 //   {
@@ -1112,7 +1112,7 @@
 //   return bookN.edition >= 2015 && bookN.genre === "Non-Fiction";
 //   // return bookN.edition === 2010;
 // });
-// console.log(userBooks);
+// alert(userBooks);
 
 // using reverse method on map of an Array
 // let myArray = [1, 2, 3, 4];
@@ -1123,7 +1123,7 @@
 //   })
 //   .reverse();
 
-// console.log(returnValue);
+// alert(returnValue);
 
 // 2.map()   // Chaining in map()
 // const nums = [34, 23, 76, 34, 65];
@@ -1132,17 +1132,17 @@
 //   .map((num) => num * 10)
 //   .map((num) => num - 2020)
 //   .filter((num) => num > 288320);
-// console.log(`New Numbers are: ${result}`);
-// console.log(result);
+// alert(`New Numbers are: ${result}`);
+// alert(result);
 
 // 3. Reduce() in Javascript
 
 // const numbers = [45, 32, 67, 34, 98, 34];
 // const result = numbers.reduce((acc, cValue) => {
-//   console.log(`Accumlator: ${acc}  Current value: ${cValue}`);
+//   alert(`Accumlator: ${acc}  Current value: ${cValue}`);
 //   return acc + cValue;
 // }, 0);
-// console.log(result);
+// alert(result);
 
 // const courses = [
 //   {
@@ -1163,7 +1163,7 @@
 //   },
 // ];
 // const totalPay = courses.reduce((acc, item) => acc + item.price, 0);
-// console.log(`Total Payable amount after discount is: RS ${totalPay}.00`);
+// alert(`Total Payable amount after discount is: RS ${totalPay}.00`);
 
 // DOM in Javascript
 // getting element by id
@@ -1204,58 +1204,169 @@
 // });
 
 // Creating a new element in Dom
-const parent = document.querySelector(".vertical");
-// console.log(parent);
-// console.log(parent.children);
-// console.log(parent.children[0].innerHTML);
+// const parent = document.querySelector(".vertical");
+// alert(parent);
+// alert(parent.children);
+// alert(parent.children[0].innerHTML);
 // for (let i = 0; i < parent.children.length; i++) {
-//   console.log(parent.children[i].innerHTML);
+//   alert(parent.children[i].innerHTML);
 // }
-parent.children[1].style.color = "orange";
-// console.log(parent.firstElementChild);
-// console.log(parent.lastElementChild);
-const select = document.querySelector(".vertical");
-// console.log(select);
-// console.log(select.parentElement);
-// console.log(select.nextElementSibling);
-// console.log("Nodes are: ", parent.childNodes);
-const heading = document.createElement("input");
-console.log(heading);
-heading.setAttribute("type", "submit");
-heading.className = "heading";
-heading.style.color = "black";
-heading.style.backgroundColor = "white";
-heading.style.cursor = "pointer";
-heading.style.padding = "6px";
-heading.style.marginLeft = "38rem";
-heading.textContent = "Submit";
-document.body.appendChild(heading);
+// parent.children[1].style.color = "orange";
+// // alert(parent.firstElementChild);
+// // alert(parent.lastElementChild);
+// const select = document.querySelector(".vertical");
+// // alert(select);
+// // alert(select.parentElement);
+// // alert(select.nextElementSibling);
+// // alert("Nodes are: ", parent.childNodes);
+// const heading = document.createElement("input");
+// alert(heading);
+// heading.setAttribute("type", "submit");
+// heading.className = "heading";
+// heading.style.color = "black";
+// heading.style.backgroundColor = "white";
+// heading.style.cursor = "pointer";
+// heading.style.padding = "6px";
+// heading.style.marginLeft = "38rem";
+// heading.textContent = "Submit";
+// document.body.appendChild(heading);
 
-// Edit & Remove Elements in DOM
-function addLi(Li) {
-  const li = document.createElement("li");
-  li.style.marginLeft = "6.5rem";
-  li.style.cursor = "pointer";
-  li.appendChild(document.createTextNode(Li));
-  document.querySelector(".footer-second").appendChild(li);
-}
-addLi("Chat with Us!");
-addLi("Drop your feedback");
+// // Edit & Remove Elements in DOM
+// function addLi(Li) {
+//   const li = document.createElement("li");
+//   li.style.marginLeft = "6.5rem";
+//   li.style.cursor = "pointer";
+//   li.appendChild(document.createTextNode(Li));
+//   document.querySelector(".footer-second").appendChild(li);
+// }
+// addLi("Chat with Us!");
+// addLi("Drop your feedback");
 
-// Edit element
-const editLi = document.querySelector(".footer-second li:nth-child(3)");
-const newLi = document.createElement("li");
-newLi.style.marginLeft = "6.5rem";
-newLi.style.cursor = "pointer";
-newLi.textContent = "Hire me!";
-editLi.replaceWith(newLi);
+// // Edit element
+// const editLi = document.querySelector(".footer-second li:nth-child(3)");
+// const newLi = document.createElement("li");
+// newLi.style.marginLeft = "6.5rem";
+// newLi.style.cursor = "pointer";
+// newLi.textContent = "Hire me!";
+// editLi.replaceWith(newLi);
 
-// Replace with
-const firstLi = document.querySelector(".footer-second li:first-child");
-const newFLi = document.createElement("li");
-newFLi.textContent = "My Projects";
-firstLi.replaceWith(newFLi);
+// // Replace with
+// const firstLi = document.querySelector(".footer-second li:first-child");
+// const newFLi = document.createElement("li");
+// newFLi.textContent = "My Projects";
+// firstLi.replaceWith(newFLi);
 
-// Remove Element
-const reMove = document.querySelector(".footer-second li:nth-child(2)");
-reMove.remove();
+// // Remove Element
+// const reMove = document.querySelector(".footer-second li:nth-child(2)");
+// reMove.remove();
+
+// Events in Javascript
+// document.querySelector(".navbar").addEventListener("click", (e) => {
+//   alert("First div clicked");
+// }, false);
+// document.querySelector(".right").addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   alert("second div clicked");
+// }, false);
+
+// document.querySelector(".navbar").addEventListener("click", (e) => {
+//   // e.stopPropagation();
+//   console.log(e.target.tagName);
+//   if (e.target.tagName === "H1") {
+//     let removeIt = e.target.parentNode;
+//     removeIt.remove();
+//   }
+// });
+
+// type, timestamp, preventDefault()
+// target, toElement, srcElement, currentTarget
+// clientX, clientY, ScreenX, screenY
+// altKey, ctrlKey, shiftKey, keyCode
+
+// Async Javascript Fundamentals
+// By default the Javascript language is Synchronous language
+// which means it executes code line by line and waits for each statement execution before moving on to next one
+
+// SettimeOut
+// const timer = () => {
+//   setInterval(
+//     setTimeout(
+//       () => (document.querySelector("#btn3").innerHTML = "Timer"),
+//       2000
+//     ),
+//     300
+//   );
+// };
+
+// const demo = setTimeout(() => {
+//   setInterval(
+//     document.querySelector("#btn3").addEventListener("click", () => {
+//       alert("Click me again");
+//     }),
+//     9000
+//   );
+// }, 200);
+
+// const sayDate = function (str) {
+//   alert(str, Date.now());
+// };
+// const intervalid = setInterval(sayDate, 5000, "hello");
+// // clearInterval(intervalid);
+// document.querySelector("#btn5").addEventListener("click", () => {
+//   alert(intervalid);
+// });
+// document.querySelector("#btn6").addEventListener("click", () => {
+//   clearInterval(intervalid);
+//   alert("Interval stopped execution");
+// });
+
+// Generating random background colors on page
+// const button = document.querySelector("#btn6");
+// const bg = () => {
+//   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+//   document.body.style.backgroundColor = "#" + randomColor;
+//   button.innerHTML = "#" + randomColor;
+// };
+// button.addEventListener("click", bg);
+// bg();
+
+// Random Color Generator with Javascript
+const randomColor = () => {
+  const hex = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+const startChangingColor = () => {
+  if (!intervalId) {
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+  // intervalId = setInterval(changeBgColor, 1000);
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = () => {
+  clearInterval(intervalId);
+};
+document.querySelector("#btn5").addEventListener("click", startChangingColor);
+document.querySelector("#btn6").addEventListener("click", stopChangingColor);
+
+// const timeout = setTimeout(() => {
+//   alert("Hello World");
+// }, 4000);
+// // clearTimeout(timeout);
+// document.querySelector("#btn6").addEventListener("click", () => {
+//   clearTimeout(timeout);
+//   alert("Timeout stopped");
+// });
+
+// // Setinterval()
+// const sayDate = (str) => {
+//   console.log(str, Date.now());
+// };
+// const intervalId = setInterval(sayDate, 1000, "Hello");
+// clearInterval(intervalId);

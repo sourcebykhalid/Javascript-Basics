@@ -20,19 +20,19 @@ body {
   background-color: black;
   height: 5rem;
 }
-.navbar ul {
+.right {
   display: flex;
   /* align-items: center; */
   justify-content: center;
 }
-.navbar ul li {
+.navbar a {
   margin: 0 24px;
   cursor: pointer;
 }
-.navbar ul li a {
+.navbar a {
   color: white;
 }
-.navbar ul li a:hover {
+.navbar a:hover {
   color: rgb(56, 56, 198);
   font-size: 1.05rem;
 }
@@ -221,7 +221,7 @@ footer {
 /* .flex > div {
   width: 122px;
 } */
-.flex ul li {
+.flex a {
   color: aliceblue;
   margin-left: 6.5rem;
 }
